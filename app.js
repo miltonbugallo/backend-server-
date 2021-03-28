@@ -32,19 +32,17 @@ var imagenesRoutes = require('./routes/imagenes');
 
 
 // Conexión a la base de datos
-mongoose.connection.openUri('mongodb://localhost:27017/HospitalDB', (err, res) => {
-
+mongoose.connect('mongodb://localhost:27017/HospitalDB', { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true });
+/* mongoose.connection.openUri('mongodb://localhost:27017/HospitalDB', (err, res) => {
     if (err) throw err;
-
     console.log('Base de datos: \x1b[32m%s\x1b[0m', 'online');
+}); */
 
-});
 
 // Server index config
 // var serveIndex = require('serve-index');
 // app.use(express.static(__dirname + '/'))
 // app.use('/uploads', serveIndex(__dirname + '/uploads'));
-
 
 
 // Rutas

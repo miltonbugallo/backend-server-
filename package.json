@@ -18,8 +18,7 @@
         "google-auth-library": "^1.6.1",
         "googleapis": "^27.0.0",
         "jsonwebtoken": "^8.5.1",
-        "mongoose": "^5.11.18",
+        "mongoose": "^5.11.15",
         "mongoose-unique-validator": "^2.0.3"
     }
-
 }
